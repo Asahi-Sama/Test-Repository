@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="parent">
+    <div id="child">Mouse over me!</div>
+  </div>
+
+  <script>
+    const parent = document.getElementById('parent');
+    const child = document.getElementById('child');
+
+    parent.onmouseover = function () {
+      console.log('Mouse over parent');
+    };
+
+    child.onmouseover = function () {
+      console.log('Mouse over child');
+    };
+
+    parent.onmouseenter = function () {
+      console.log('Mouse enter parent');
+    };
+
+    child.onmouseenter = function () {
+      console.log('Mouse enter child');
+    };
+  </script>
+
+</body>
+
+</html>

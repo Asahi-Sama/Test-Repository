@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Note. Arrays can hold many values under a single name.
+
+        let marks_class_12 = [94, 74, 32, 85, false, "not present"]
+
+        marks_class_12[6] = 97                //Adding a new value to the Array.
+        marks_class_12[2] = 33                //Changing the value of an Array.
+
+        //Note. Arrays are mutable arrays can be changed, string are immutable string cannot be changed.
+
+        console.log(marks_class_12);
+
+        console.log("Marks of role 01 is =", marks_class_12[0])
+        console.log(marks_class_12[1]);
+        console.log(marks_class_12[2]);
+        console.log(marks_class_12[3]);
+        console.log(marks_class_12[4]);
+        console.log(marks_class_12[5]);
+        console.log(marks_class_12[6]);
+        console.log(marks_class_12[7]);       //Will be undefined because index 7 dosen't exist.
+
+        console.log("Class 12 result published", marks_class_12.length, "Students.");
+
+
+        //
+
+
+        console.log(typeof marks_class_12);   //(typeof array) = Object. Array is a object.
+
+
+        ///
+
+
+        //Using for loop in Array.
+
+        let marks_class_11 = [94, 45, 75, 36, 86, 39]
+
+        for (let i = 0; i < marks_class_11.length; i++) {
+            console.log(marks_class_11[i]);
+            // console.log(marks_class_11[Object.keys(marks_class_11)[i]]);
+            // console.log(Object.keys(marks_class_11)[i]);
+        }
+        
+        // console.log(marks_class_11[4]);
+        console.log(marks_class_11);
+
+
+
+        //
+
+
+        //Using for of loop in Array.
+
+
+        for (let k of marks_class_11) {
+            console.log(k)
+        }
+
+
+        //
+
+
+        //Using for in loop in Array.
+
+
+        for (let j in marks_class_11){
+            console.log(marks_class_11[j]);
+            console.log(j);                  //It will returns index.
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

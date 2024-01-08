@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Data types in JavaScript :  01_Premitive data types, 02_Non premitive data types (Object).
+
+
+
+        //01_Premitive data types :-
+        //nn ss bb u : null,number,symble,string,BigInt,boolean,undefined.
+
+
+        let a = null;
+        let b = 420;
+        let c = Symbol("I am a nice symble");
+        let d = "karim";
+        let e = BigInt("17") + BigInt("3");
+        let f = true; //can also be false
+        let g = undefined;
+
+        console.log(a, b, c, d, e, f, g);
+
+
+        //
+
+
+        console.log(typeof f);     //You can find which type of dats this is.
+
+
+        ///
+
+
+
+        //02_Non premitive data types (Objects):-
+
+
+        const item = {
+            "Sabbir": true,        //Sabbir,Rohan,Ashraf,Rahul,Kamal,no (here all of them is object).
+            "Rohan": undefined,
+            "Ashraf": 25,
+            Rahul: 36,             //("") as your wish.
+            Kamal: "hi",
+            no: "na",
+            Ahmed: 10,
+            45:45
+        }
+        
+        console.log(item);
+        console.log(item["Ashraf"]);
+        console.log(item['45']);         //we should always use this method
+        console.log(item.Kamal);
+        console.log(item.Ashraf);
+
+
+        // Note: We should always use single semiclone ('') for object/non premetive data type.Its better to use console.log(item.Ashraf).
+
+    </script>
+
+
+</body>
+
+</html>

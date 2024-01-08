@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //content :  01_map Method, 02_filter Method, 03_reduce Method.
+
+        const map_ = "map Method  :"                ////01_map Method.
+        console.log(map_);
+
+
+        let shonkha = [10, 20, 30, 40, 50]
+
+        let s = shonkha.map((a, b, c) => {          //xyz.map() create a new Array.
+            console.log(a, b, c);                   //a = value, b = index, c = Array.
+            return a + 1;                           //map return array.
+        })
+
+        console.log(s);
+
+
+        //
+
+
+        // const a = (x, y, z) => {                 //Also you can use this type of function.
+        //     console.log(x, y, z);
+        //     return x + 1
+        // }
+
+        // let t = shonkha.map(a)
+        // console.log(t);
+
+
+        ////
+
+
+        const filter_ = "filter Method  :"          ////02_filter Method.
+        console.log(filter_);
+
+
+        let newShonkha = [5, 10, 15, 20, 25, 30]
+
+        let ss = newShonkha.filter((a) => {         //It cannot modify original Array.
+            return a < 20                           //filter return array.
+        })
+
+        console.log(ss);
+
+
+        //
+
+
+        // const aa = (a) => {                      //Also you can use this type of function.
+        //     return a < 20                        //filter return array.
+        // }
+
+        // let tt = newShonkha.filter(aa)
+        // console.log(tt);
+
+
+        ////
+
+
+        const reduce_ = "reduce Method  :"          ////03_reduce Method.
+        console.log(reduce_);
+
+
+        let shonkha_more = [1, 3, 5, 5, 1, 7]
+
+        let sss = shonkha_more.reduce((a, b) => {
+            return a + b                            //reduce return value.
+        })
+
+        console.log(sss);                           //1 +3 = 4 + 5 = 9 +5 = 14 + 1 = 15 + 7 = 22
+
+
+        //
+
+
+        // const aaa = (a, b) => {                  //Also you can use this type of function.
+        //     return a + b                         //reduce return value.
+        // }
+
+        // let ttt = shonkha_more.reduce(aaa)
+        // console.log(ttt);
+
+
+        document.body.style.background = "gray";
+    </script>
+
+
+</body>
+
+</html>

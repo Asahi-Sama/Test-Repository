@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30</title>
+</head>
+
+<body>
+    <script>
+
+        // Excercise 2 : Use JavaScript to create a game of Snake Water Gun the game should ask you to enter S, W or G.The computer should be able to randomly generate S, W or G and declare win or loss using alert use confirm and prompt whenever required.
+
+
+        //solution
+
+
+        let sabbir = prompt("Your turn Enter s, w, g")
+
+        let processing = Math.floor(Math.random() * 3)
+        console.log(processing)
+
+        let computer = ["s", "w", "g"][processing]
+
+
+
+        const match = (a, b) => {
+
+            if (a == b) {
+                console.log("Match is tie")
+            }
+            else if (a == "s" && b == "w") {
+                console.log("The winner is Sabbir")
+            }
+            else if (b == "s" && a == "w") {
+                console.log("The winner is Computer")
+            }
+            else if (a == "w" && b == "g") {
+                console.log("The winner is Sabbir")
+            }
+            else if (b == "w" && a == "g") {
+                console.log("The winner is Computer")
+            }
+            else if (a == "g" && b == "s") {
+                console.log("The winner is Sabbir")
+            }
+            else if (b == "g" && a == "s") {
+                console.log("The winner is Computer")
+            }
+        }
+
+        let result = match(sabbir, computer)
+        console.log(result)
+
+    </script>
+</body>
+
+</html>

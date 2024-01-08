@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Array methods :  01_toStrings, 02_join, 03_pop(), 04_push(), 05_shift, 06_unshift...
+
+        const toString = "////\"toString\" Method :"     ////01_toString Method.
+        console.log(toString);
+
+
+        let shonkha = [76, 21, 3, 7, 8]
+        console.log(shonkha, typeof shonkha);
+
+        // shonkha.toString()               //xyz.toString()  cannot modify original Array.
+        let x = shonkha.toString()          //x is now a string. It will convert Array to string.
+
+        console.log(typeof x);
+        console.log(x);
+
+
+        ///
+
+
+        const join = "////\"join\" Method :"             ////02_join Method.
+        console.log(join);
+
+
+        // shomkha.join("_")                //xyz.join()  cannot modify original Array.
+        let y = shonkha.join("_")           //This will join the string xyz.join()."y"  new String.
+        console.log(y, typeof y);           //print "y" and identify which data type "y" is.
+
+        let z = shonkha.join(" and ")       //"z"  new Array.
+        console.log(z);
+
+
+        ///
+
+
+        const pop = "////\"pop\" Method :"               ////03_pop Method.
+        console.log(pop);
+
+
+        let abcd = [56, 76, 23, 8, 90]      //Array.
+
+        // abcd.pop()                       //xyz.pop()  modify the original Array. Remove the last element in Array.
+        console.log(abcd);
+        let n = abcd.pop();                 //Remove the last element in Array. pop out the last element.
+        console.log(abcd);
+        console.log(n);                     //"pop"  element. Array after pop.
+        console.log(abcd, n);               //Returns the removed element.pop returns the popped element.
+
+
+        //
+
+
+        const push = "////\"push\" Method :"             ////04_push Method.
+        console.log(push);
+
+
+        let xyz = [10, 20, 30, 40, 50]
+
+        // let m = xyz.push(500);           //"r"  new Array.
+        xyz.push(500)               //xyz.push(00)  modify the original Array
+        console.log(xyz);                   //"push" add a new Array length in last.(add new element).
+        // console.log(m);                  //"push" element. Added element do not show. length of the array.
+        // console.log(xyz, m);             //Array with added new element and length.
+
+
+        ///
+
+
+        const shift = "////\"shift\" Method :"           ////05_shift Method. 
+        console.log(shift);
+
+
+        let qrst = [1, 2, 3, 4, 5]
+
+        // qrst.shift()                     //xyz.shift()  modify the original Array.
+        let s = qrst.shift();               //"s"  new Array.
+        console.log(qrst);                  //Remove the first element in Array.
+        console.log(s);                     //"shift" element. Removed element.
+        console.log(qrst, s);               //Returns the removed element. shift returns the shifted element.
+
+
+        //
+
+
+        const unshift = "////\"unshift\" Method :"       ////06_unshift Method.
+        console.log(unshift);
+
+
+        let uvwx = [11, 12, 13, 14, 15]
+
+        uvwx.unshift(10);                   //xyz.unshift(00)  modify the original Array.
+        // let v = uvwx.unshift(10);        //"v"  new Array.
+        console.log(uvwx);                  //"unshift" add a new Array length in first.(add new element).
+        // console.log(v);                  //"unshift" element. Added element do not show.It will show the length.
+        // console.log(uvwx,v);             //Array with added new element and length.
+
+
+        document.body.style.background = "gray";
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>44</title>
+</head>
+
+<body>
+    <div id="id1" class="c1" data-ahs="shawon">
+        hey i am sabbir
+    </div>
+
+
+    <script>
+
+        let a = id1.getAttribute("class")      //getAttribute method
+        console.log(a)
+
+        console.log(id1.hasAttribute("class")) //hasAttribute method   returns true or false
+        console.log(id1.hasAttribute("blabla"))
+
+        let b = document.getElementById("id1")
+        // b.setAttribute("hidden", "true")     //setAttribute method
+        b.setAttribute("class", "hello hmm")    //we can set any Attributes
+
+        // b.removeAttribute("class")              //removeAttribute method
+
+
+        console.log(b.dataset)                 //custom Attribute method
+        console.log(b.dataset.ahs)                 //custom Attribute method
+
+    </script>
+</body>
+
+</html>

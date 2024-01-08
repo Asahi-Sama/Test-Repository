@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>47</title>
+</head>
+
+<body>
+
+    <div id="ahs" class="yellow text-dark">
+        <span>
+            hey i am good
+        </span>
+    </div>
+
+    <script>
+
+
+        let a = document.getElementById("ahs")
+
+        a.className = "text-dark red"
+        a.classList.remove("red")      // used to remove
+        a.classList.add("red")         //used to add
+        // a.classList.toggle("red")   //if exist then it will remove or if not then it add
+        // a.classList.append("red")   //not working there only for html working
+
+    </script>
+
+
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .yellow {
+            background-color: yellow;
+            color: white;
+        }
+        .red {
+            background-color: red;
+            color: white;
+        }
+        .text-dark{
+            color: black;
+        }
+    </style>
+
+</body>
+
+</html>

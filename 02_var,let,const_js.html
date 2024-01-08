@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        var a = 8
+        var a = 9                //var can be updated and re-declared within it's scope.
+        console.log(a);
+
+
+        ///
+
+
+        //let b = "karim"
+        //let b = "rohim"        //let cannot be re-declared within it's scope.
+        // console.log(b);       //This will throw an error
+
+
+        //
+
+
+        let c = "karim"
+        c = "rohim"              //let can be updated but cannot be re-declared.
+        console.log(c);          //Once let declare variable name it cannot be declare again,It can be declare only for block{} elements.
+
+
+        //let c = "shawon"       //c cannot be declare cause it's alrady been declared with let.
+        //console.log(c);        //This will throw an error
+
+        // var c = "shawon"      //c cannot be declare cause it's alrady been declared with let.
+        //console.log(c);        //This will throw an error
+
+        {
+            let c = "shawon"
+            console.log(c);      //block elements
+        }
+
+
+        ///
+
+
+        const owner = "sabbir"   //const cannot be update and re-declare
+        // owner = "ashraf"      //const cannot be update //const can add more literal. (04_practice_js.)
+        console.log(owner);
+
+        //let owner = "ashref"   //owner can't declare cause const declared this
+        //var owner = "srabon"   //owner can't declare cause const declared this
+
+
+        ////
+
+        
+        //Note. Don't use var, Always use let an const.
+
+
+        document.body.style.background = "gray"
+    </script>
+
+</body>
+
+</html>

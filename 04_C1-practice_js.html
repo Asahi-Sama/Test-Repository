@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //01_Create a variable of type string and try to add a number to it.
+        //02_Use typeof operator to find the datatype of the string in first question.
+        //03_Create a const object in js. can you change it to hold a number,string,...?
+        //04_Try to add a new key to the const object in problem 3 were you able to do it?
+        //05_Write a JS program to create a word meaning dictionary of 5 words.
+
+
+
+        //01_answer.
+
+        let a = "karim"
+        let b = 12
+        console.log(a + b);
+
+
+        ///
+
+
+
+        //02_answer.
+
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof (a + b));
+
+
+        ///
+
+
+
+        //03_answer.
+
+        const c = {
+            name: "sabbir",
+            age: 19,
+            isSchool: false,
+        };
+
+
+        /*c = 25              //No i can't change it to hold any type of premitives.
+        c = "hallo"
+        c = true
+        c = null
+        c = Symbol(st)
+        c = {}*/              //We can't store second object also.
+
+
+        ///
+
+
+
+        //04_answer.
+
+        c['hello'] = "world"  //c is pointing a object which is reserved in memory.
+        c["age"] = 20         //c is a referense for the object.
+                              //we can change and add the value in this referense.
+        console.log(c);
+        console.log(c.age);   //console.log(c['age']);     also warkable.
+
+
+        ///
+
+
+
+        //05_answer.
+
+        const dict = {
+            canicular: "pertaining to the rising of the dog start or to the star itself",
+            evection: "a periodic irregularity in the moon's motion, caused by the attraction of the sun",
+            rizzar: "a haddock dried or cured in the sun.",
+            terraqueous: "consisting of land and water.",
+            ansa: "a looped handle, especially of a vase."
+        }
+
+        console.log(dict.rizzar);
+        console.log(dict['ansa']);  //also this type able to use.
+
+
+        ////
+
+
+
+        //Extra
+
+        77;
+        "sabbir"
+        !true        //There is all of them are valid JavaScript program.
+        false        //They will not throw an error.
+        null
+ 
+
+        document.body.style.background = "gray"
+
+
+    </script>
+
+
+</body>
+
+</html>

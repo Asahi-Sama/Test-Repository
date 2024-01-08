@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Operators in js :  01_Arithemetic Operator, 02_Assignment Operator, 03_Comparison Operator, 04_Logical Operator, 05_Bitwise Operator, 06_Ternary Operator , 07_Typeof Operator...
+
+
+        //01_Arithemetic Operators.
+
+        console.log("Arithemetic Operators");
+
+        let a = 10;
+        let b = 3;
+        console.log("a + b =", a + b);       //"+" Addiction Arithemetic operator.
+        console.log("a - b =", a - b);       //"-" Subtraction Arithemetic operator.
+        console.log("a / b =", a / b);       //"/" Division Arithemetic operator.
+        console.log("a * b =", a * b);       //"*" Multiplication Arithemetic operator.
+        console.log("a % b =", a % b);       //"%" Modulus Arithemetic operator.
+        console.log("a ** b =", a ** b);     //"**" Exponentiation Arithemetic operator.  (a to the power b).
+
+        console.log("a++ =", a++);           //"++" Increment Arithemetic operator.
+        console.log("a =", a);
+
+        a = 10;
+        console.log("++a =", ++a);
+        console.log("a =", a);
+
+        a = 10;     
+        console.log("a-- =", a--);           //"--" Decrement Arithemetic operator.
+        console.log("a =", a);
+
+        a = 10;
+        console.log("--a =", --a);
+        console.log("a =", a);
+
+
+        /*
+        let c = 20;
+        let d = 8;
+        console.log("c++ =", c++);           //Exercise.
+        console.log("++c =", ++c);
+        console.log("c-- =", c--);   
+        console.log("--c =", --c);
+        console.log("c % d =", c%d);
+        console.log("c ** d =", c**d);
+        */
+
+
+        ///
+
+
+
+        //02_Assignment Operator.
+
+        console.log("Assignment operators");
+
+        let e = 10;
+        e += 5;
+        console.log("e is now =", e);
+
+        e = 10;
+        console.log("e =", e);
+        e -= 5;
+        console.log("e is now =", e);
+
+        e = 10;
+        e *= 3;
+        console.log("e is now =", e);
+
+        e = 10;
+        e /= 3;
+        console.log("e is now =", e);
+
+        e = 10;
+        e **= 2;
+        console.log("e is now =", e);
+
+
+        ///
+
+
+
+        //03_Comparison Operators.
+
+        console.log("Comparison Operators")
+
+        let f = 100;
+        let g = 200;
+        let k = "100"
+        console.log("f == g", f == g);
+        console.log("f != g", f != g);
+        console.log("f == k", f == k)
+
+        let h = 100;
+        let i = 200;
+        console.log("h === i", h === i);
+        console.log("h !== i", h !== i);
+
+        let h1 = 100;
+        let i1 = 100;
+        console.log("h1 === i", h1 === i1);
+        console.log("h1 !== i", h1 !== i1);
+
+        let h2 = 100;
+        let i2 = "100";
+        console.log("h2 === i2", h2 === i2);     //this can differentiate the string
+        console.log("h2 !== i2", h2 !== i2);
+
+        console.log("h < i", h < i);
+        console.log("h > i", h > i);
+
+
+        ///
+
+
+
+        //04_Logical Operators.
+
+        console.log("Logical Operators");
+
+        let x = 50;
+        let y = 60;
+        console.log(x > y && x == 50);       // true && true = true, true && false = false, false && true = false, false && false = false. 
+
+
+        console.log(x < y || x == y);        // true || true = true, true || false = true, false || true = true, false || false = false.
+
+
+        console.log(!false);
+        console.log(!true);
+
+
+        ///
+
+
+
+        //05_Bitwise Operator.
+
+        console.log("Bitwise Operator");     //We will discuse this in future.
+
+
+        ////
+
+
+
+        //06_Ternary Operator.
+
+        let s = prompt("guess my age")
+        console.log(s, "is", s == 19 ? "my age":"not my age");
+
+
+
+        
+        // 3 + 5 = 8;            "+" is operator, "3" an "5" is operands, "8" is result.
+
+
+    </script>
+
+
+</body>
+
+</html>

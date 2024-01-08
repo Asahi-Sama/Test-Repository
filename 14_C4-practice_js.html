@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //01_What will the following print in JavaScript?  console.log(sab\".length)
+        //02_Explore the includes, starts with & ends with function of a string.
+        //03_Write a program to convert a string to lowecase.
+        //04_Extract the amount out of this string   "please give tk 1000"
+        //05_Try to change 4th character of a given string were you able to do it?
+
+
+        //01_answer.
+
+        let name = "sab\""               //(\")  it is called Escape sequense character
+        console.log(name.length)         //length = 4
+
+
+        ///
+
+
+        //02_answer.
+
+        const sentense = "The quick brown fox jumps over the lazy dog.";
+        const word = "brown";
+
+        console.log(sentense.includes(word));       //It will returns true.
+        // console.log(sentense.includes(cat));
+
+
+        //
+
+
+        const str1 = 'Saturday night plans';
+
+        console.log(str1.startsWith('Sat'));
+        // expected output: true
+
+        console.log(str1.startsWith('night', 9));
+        // expected output: true
+
+        console.log(str1.endsWith('plans'));
+        //expected outpute: true
+        
+        ///
+
+
+        //03_answer.
+
+        let hello = "World"
+        console.log(hello.toLowerCase());
+        console.log(hello.toUpperCase());
+
+
+        ///
+
+
+        //04_answer.
+
+        let money = "Please give tk 1000"
+        let amount = Number.parseInt(money.slice("Please give tk ".length));   //now it is a number
+        // let amount = money.slice(15)            //also you can right this
+        console.log(amount);
+        // console.log(money.slice(15))             //also you can use this for print
+        // console.log(money.slice("Please give tk ".length));       //also you can use this for print
+
+
+        ///
+
+
+        //05_answer.
+
+        let friend = "Rohim"
+        friend[4] = "a"             //friend is not changed, because string is immutable
+        console.log(friend);        //you can able to create a new string or upload (var,let)
+
+        console.log(friend.replace("Rohim", "a"));  //string can be replaced but cannot be changed like this 
+
+
+    </script>
+
+
+</body>
+
+</html>

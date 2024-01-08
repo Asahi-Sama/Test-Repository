@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12</title>
+</head>
+<body>
+    
+
+    <p>in this example, the <b>person.showDetails()</b> method is called when the button below is  clicked. </p>
+    <button onclick="person.showDetails()">Show Details</button>
+
+
+    <script>
+
+        var person = {
+            name: "Shawon Ahmed",
+            age:19,
+            showDetails: function(){
+                alert(this.name + " is " + this.age + " years old.");
+            }
+        };
+    </script>
+
+</body>
+</html>

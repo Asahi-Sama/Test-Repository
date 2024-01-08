@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37</title>
+</head>
+
+<body>
+
+    <p>This is matches() method</p>
+
+    <div id="demo" class="container"></div>
+    <p id="hi"></p>
+
+    <script>
+
+        let e = document.getElementById("demo");
+        let s
+
+        if (e.matches(".container")) {
+            s = "this e match the css selector"
+        }
+        else {
+            s = "this e doesn't match the css selector"
+        }
+
+        document.getElementById("demo").innerHTML = s
+
+
+        
+
+        // let e = document.getElementById("demo");
+        // let a = e.matches(".container")
+        // let text
+
+        // if(a){
+        //     text = "this e match the css selector"
+        // }
+        // else{
+        //     text = "this e doesn't match the css selector"
+        // }
+
+        // document.getElementById("demo").innerHTML = text
+
+
+
+        ////
+
+
+        if(e.matches(".container , .box")){           // if e have either container or box it true
+            document.getElementById("hi").innerHTML = "nice"
+        }
+        else{
+            document.getElementById("hi").innerHTML = "how"
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

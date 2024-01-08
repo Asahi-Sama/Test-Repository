@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //01_Create an Array of numbers and take input from the user to add numbers to this Array.
+        //02_Keep adding numbers to the Array in 1st Question until 0 is added to the Array.
+        //03_filter for numbers divisible by 10 from a given Array.
+        //04_Create an Array of square of given numbers.
+        //05_Use reduce to calculate factorial of a given number from an Array of first n natural numbers (n being the number whose factors needs to be calculated).
+
+
+        //01_answer.
+
+        // let array_ = [1, 2, 3, 4]
+
+        // let a = prompt("Enter a number")
+        // a = Number.parseInt(a)
+
+        // array_.push(a)
+
+        // console.log(array_);
+
+
+        ///
+
+
+        //02_answer.
+
+        // let array_more = [1, 2, 3, 4]
+
+        // let a1;
+
+        // do {
+        //     a1 = prompt("Enter a number")
+        //     a1 = Number.parseInt(a1)
+
+        //     array_more.push(a1)
+        // }
+
+        // while (a1 != 0);
+        // console.log(array_more);
+
+
+        ///
+
+
+        //03_answer.
+
+        let newArray = [8, 14, 40, 350, 200, 67]
+
+        let hi = newArray.filter((a) => {
+            return a % 10 == 0
+        })
+
+        console.log(hi)
+
+
+        //
+
+
+        const s = (x) => {
+            return x % 10 == 0                     //Also you can use this type of function.
+        }
+
+        let p = newArray.filter(s)
+        console.log(p);
+
+
+        ///
+
+
+        //04_answer.
+
+        let new_array = [5, 10, 15, 20, 30]
+
+        let n = new_array.map((x) => {
+            return x * x
+        })
+
+        console.log(n);
+
+
+        //
+
+
+        const nam = (x) => {                         //Also you can use this type of function.
+            return x * x
+        }
+
+        let a = new_array.map(nam)
+        console.log(a);
+
+
+        ///
+
+
+        //05_answer.
+
+        let more_array = [2, 2, 3, 4]
+
+        let i = more_array.reduce((a1, a2) => {
+            return a1 * a2
+        })
+
+        console.log(i);
+
+
+        //
+
+
+        const name = (a1, a2) => {                   //Also you can use this type of function.
+            return a1 * a2
+        }
+
+        let h = more_array.reduce(name)
+        console.log(h);
+
+
+        document.body.style.background = "gray";
+    </script>
+
+
+</body>
+
+</html>

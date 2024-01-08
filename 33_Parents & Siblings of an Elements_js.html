@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33</title>
+</head>
+
+<body><div><div class="first">first</div><div class="second">second</div></div>
+
+
+    <script>
+
+        //siblings are nodes that are children of the same parent
+        //Example : <head> and <body>  are siblings, siblings have same parent In the above example it's html
+
+        console.log(document.body.firstChild)
+        a = document.body.firstChild
+        console.log(a.firstChild)
+        console.log(a.parentNode);        //parentNode it return any node
+        console.log(a.parentElement);     //parentElement it return element
+        console.log(a.firstChild.nextSibling)
+
+    </script>
+
+</body>
+
+</html>

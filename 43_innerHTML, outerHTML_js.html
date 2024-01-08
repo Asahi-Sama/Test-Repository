@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43</title>
+</head>
+
+<body>
+
+    hello world
+
+
+
+    <div>
+        <span id="s"><b>hello</b> i am span</span>
+    </div>
+    <script>
+
+
+        // tagName :
+        //  used to read tag name of an element
+        //tagName only exist for element nodes
+
+        //nodeName defined for any node (text, comment etc)
+
+
+        let a = document.getElementsByTagName("span")[0]
+        console.log(a)
+        // a.hidden = true
+
+        let b = document.getElementsByTagName("span")[0]
+        console.dir(b)
+
+        console.log(document.body.firstChild.nodeName)
+        console.log(document.body.firstElementChild.nodeName)
+
+
+        //innerHTML :
+
+        console.log(s.innerHTML)
+        // let p = s.innerHTML = "how are you"    //we can set innetHTML
+        // console.log(p)                         //innerHTML is valid only for element nodes
+
+
+        //outerHTML :
+
+        console.log(s.outerHTML)
+        // let q = s.outerHTML = "<div>hey</div>"    //we can change outerHTML
+        // console.log(q)
+
+
+
+        console.log(document.body.firstChild.data)
+        console.log(document.body.firstChild.nodeValue)
+        // console.log(document.body.textContent)
+
+
+        // let h = document.body.firstChild
+        // h.hidden = true
+
+    </script>
+</body>
+
+</html>

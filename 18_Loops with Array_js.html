@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Content :  01_for loop, 02_forEach loop, 03_Array.form, 04_for of loop, 05_for in loop.
+
+        const for_loop = "for loop :"               ////01_for loop.
+        console.log(for_loop);
+
+
+        let num = [10, 20, 30, 40, 50, 60]
+
+        for (i = 0; i < num.length; i++) {
+            console.log(num[i]);
+        }
+
+
+        ///
+
+
+        const forEach_ = "forEach loop :"           ////02_forEach loop.
+        console.log(forEach_);
+
+
+        let number = [3, 4, 5, 6, 7, 8, 9]
+
+        number.forEach((a) => {                     //xyz.forEach(() =>{console.log();return}).
+            console.log(a * a);
+        })
+        
+
+        /*const fun_ = (a) => {                     //sry this is not array method but workeble
+            console.log(a * a)
+        }
+
+        number.forEach(fun_)*/
+
+
+        //
+
+
+        /*const sum = (p, q) => {                   //const name = () => {return }    this is also a function (array function)
+            return p + q
+        }
+
+        console.log(sum(10, 5));
+
+
+        //
+
+
+        const hello = () => {
+            console.log("hey how are you");
+            return "hi"
+        }
+
+        let s = hello();
+        console.log(s);*/
+
+
+        ///
+
+
+        const Array_form = "Array.form :"           ////03_Array.from
+        console.log(Array_form);
+
+
+        let name = "Sabbir"
+        let r = Array.from(name)                    //String to Array.
+        console.log(r);                             //It print Array.
+        console.log(r[1]);                          //It print index 1
+        console.log(r[2]);                          //It print index 2
+        console.log(r[3]);                          //It print index 3
+
+
+        ///
+
+
+        const for_of = "for of loop :"              ////04_for of loop.
+        console.log(for_of);
+
+
+        let new_shonkha = [11, 22, 33, 44, 55]
+
+        for (let i of new_shonkha) {
+            console.log(i);
+            // console.log(i[2]);                   //It will print undefined.
+        }
+
+
+        ///
+
+
+        const for_in = "for in loop :"              ////05_for in loop.
+        console.log(for_in);
+
+
+        let more_shonkha = [1000,2000,3000,4000,5000]
+
+
+        for (let it in more_shonkha) {
+            console.log(it);                        //It print all index.
+            // console.log(more_shonkha[it])
+            // console.log(more_shonkha[it]);                //It print elements (numbers).
+        }
+        // console.log(more_shonkha[1]);
+
+
+    </script>
+
+
+</body>
+
+</html>

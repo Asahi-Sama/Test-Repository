@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //content : 01_delete, 02_concat, 03_sort, 04_slice, 05_splice, 06_reverse
+
+        const delete_ = "////\"delete\" Methode :"       ////01_delete method.
+        console.log(delete_);
+
+
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        console.log(num);
+        console.log(num.length);                         //The length of Array.
+
+        delete num[0]                                    //modify the original Array.It will delete the 0 index element.
+        // let s = delete num[0]                         //"s"  new Array.
+        console.log(num);
+        // console.log(s)                                //Not show deleted element. It show true or false
+        console.log(num.length);                         //The length of Array.
+
+
+        ///
+
+
+        const concat_ = "////\"concat\" Method :"        ////02_concat method.
+        console.log(concat_);
+
+
+        let number = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let number_more = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+        let number_even_more = [110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+
+        let newArray = number.concat(number_more, number_even_more, "hi how are you")
+        console.log(newArray);                           //It will add multiple Array to 1 array.
+
+        console.log(number);
+        console.log(number_more);                        //Other Arrays are normal.
+        console.log(number_even_more);
+
+
+        ///
+
+
+        const sort_ = "////\"sort\" Method :"            ////03_sort method.
+        console.log(sort_);
+
+
+        let sss = (a, b) => {                            //This is a function.
+            return a - b                                 //Small to big.
+            //return b-a                                 //Big to small.
+        }
+
+        let shonkha = [3347, 22, 34, 2, 5, 23, 9, 38, 332, 331]
+        // shonkha.sort()                                //It will modify the original Array.
+        shonkha.sort(sss)                                //Small to big
+        // shonkha.reverse()                             //It will reverse small to big = big to small.
+        console.log(shonkha);                            //It will arrange alphabetically.
+
+
+        ///
+
+
+        const slice_ = "////\"slice\" Method :"          ////04_slice method.
+        console.log(slice_);
+
+
+        let shonkha_even_more = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+        // shonkha_even_more.slice(3)                    //It cannot modify original Array.So it's not working.
+        // let newshonkha = shonkha_even_more.slice(3)   //I Create a new Array for that.
+        let newshonkha = shonkha_even_more.slice(3, 5)   //It will print index 3 to index 4, 5th index will not prin.
+        // console.log(shonkha_even_more)
+        console.log(newshonkha);
+
+
+        /*Explanation :  If slice is 1 argument (like this : shonkha_even_more.slice(3)) then it will print index 3 to last.Or if slice is 2 argument (like this : shonkha_even_more.slice(3, 5)) then it will print index 3 to index 4 (5th index would not print).*/
+
+
+        //
+
+
+        const splice_ = "////\"splice\" Method :"        ////05_splice method.
+        console.log(splice_);
+
+
+        let shonkha_more = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        shonkha_more.splice(2, 4, 2000, 3000, 4000, 5000) //It will modify the original Array
+        // let added_value = shonkha_more.splice(2, 4, 2000, 3000, 4000,5000)
+        console.log(shonkha_more);
+        // console.log(added_value)
+
+
+        /*Explanation :  shonkha_more.splite(2, 4, 2000, 3000, 4000, 5000).argument 1 = 2, argument 2 = 4, argument 3 = 2000, 3000, 4000, 5000.Argument 1 start with index 2.Argument 2 remove index 2 to index 5 in Array total 4 object.Argument 3 adding the object in Array start with index 2. [argument 1 = where to start, argument 2 = how much number remove, argument 3 = what's new to add]*/
+
+
+        ///
+
+
+        const reverse_ = "////\"reverse\" Method :"      ////06_reverse method.
+        console.log(reverse_);
+
+
+        let abc = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        console.log(abc);
+        abc.reverse()                                    //modify the original array. It will reverse the Array.
+        console.log(abc);
+
+        document.body.style.background = "gray";
+    </script>
+
+
+</body>
+
+</html>

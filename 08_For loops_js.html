@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Loops in JavaScript
+
+        //Type of loops :  01_for loop, 02_for in loop, 03_for of loop, 04_while loop, 05_do while loop.
+
+
+
+        //01_for loop
+
+        for (let a = 0; a < 5; a++) {
+            console.log(a);
+        }
+
+
+        //
+
+
+        /*Explanation :  (let a = 0;) = Statement 1,  (a < 5;) = Statement 2,  (a++;) = Statement 3.
+
+        Statement 1 exicute 1 time before the loop start and if statement 2 is true {then loop body run 1 time}, After Statement 1 complete loop will start.
+
+        Loop process - [Statement 3 exicute and go back to Statement 2, if Statement 2 is true {then loop body run 1 time}.
+
+        After it will complete, Statement 3 again exicute and go back to statement 2, If Statement 2 is true {then loop body run 1 more time}].
+
+        As long as Statement 2 doesn't go false this process will be continued, When Statement 2 returns false the loop will stop.*/
+
+
+        //
+
+
+        /*//Exercise :
+        
+        let b = prompt("how much number you need?");
+        b = Number.parseInt(b);
+        
+        for (let c = 0; c < b; c++){
+            console.log(c + 1);
+        }*/
+
+
+        ///
+
+
+        //02_For in loop.
+
+        let object = {
+            sabbir: 90,
+            ahmed: 60,
+            shawon: 45,
+            ashraf: 64,
+            karim: 80
+        }
+
+        for (let b in object) {
+            console.log("marks of " + b + " are " + object[b]);
+            // console.log(b);
+            // console.log(object[b]);
+        }                                  //We will learn "for in loop" in future (Arrays)
+
+        // console.log(object.sabbir);
+        // console.log(object.sabbir)
+
+
+        ///
+
+
+        //03_for of loop.
+        
+        let ss = "sdjfjsdfj"
+
+        for (let c of ss) {           //(ahmed) this object need to be iterable
+            console.log(c);
+        }                                  //We will learn "for of loop" in future (Arrays)
+
+
+    </script>
+
+
+</body>
+
+</html>

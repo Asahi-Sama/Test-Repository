@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //01_Use logical operator to find whether the age of a person lies between 10 and 20 ?
+        //02_Demonstrate the use of switch case statements in javaScript.
+        //03_Write a javaScrit program to find whether a number is divisible by 2 and 3.
+        //04_Write a javaScrit program to find whether a number is divisible by either 2 and 3.
+        //05_Print "you can Drive" or "you cannot Drive", based on age being 18 or higher, using ternary operator.
+
+
+
+        //01_answer.
+
+        let age = prompt("what is your age");
+        age = Number.parseInt(age);
+        if (age > 10 && age < 20) {
+            alert("your age lies between 10 and 20");
+        }
+
+        else {
+            alert("your age doesn't lies between 10 and 20");
+        }
+
+
+        //
+
+
+        /*if (age > 10 && age < 20) {
+            console.log("your age lies between 10 and 20");       //you can print this in console.
+        }
+
+        else {
+            console.log("your age doesn't lies between 10 and 20");
+        }*/
+
+
+        ///
+
+
+
+        //02_answer.
+
+        /*let age = prompt("what is your age?");
+        switch (age) {                              //switch (){case '00':xyz}
+            case '12':
+            console.log("your age is 12");
+            break
+            case '13':
+            console.log("your age is 13");
+            break
+            case '14':
+            console.log("your age is 14");
+            break
+            case '15':
+            console.log("your age is 15");
+            break
+            default:
+            console.log("your age is not special");
+        }*/
+
+
+        ///
+
+
+
+        //03_answer.
+
+        /*let num = prompt("inter a number which is divisible by 2 and 3");
+        num = Number.parseInt(num);
+
+        if (num % 2 == 0 && num % 3 == 0) {
+            console.log("your number is divisible by 2 and 3");
+        }
+
+        else {
+            console.log("your number is not divisible by 2 and 3");
+        }*/
+
+
+        ///
+
+
+
+        //04_answer.
+
+        /*let num = prompt("inter a number which is divisible by 2 and 3");
+        num = Number.parseInt(num);
+
+        if (num % 2 == 0) {
+            console.log("your number is divisible by 2");
+        }
+
+        else if (num % 3 ==0) {
+            console.log("your number is divisible by 3");
+        }
+
+        else {
+            console.log("your number is not divisible by 2 and 3");
+        }*/
+
+
+        ///
+
+
+
+        //05_answer.
+
+        /*let a = prompt("what is your age?");
+        a = Number.parseInt(a);
+
+        console.log(a >= 18 ? "You can Drive" : "You cannot Drive");*/
+
+
+    </script>
+
+
+</body>
+
+</html>

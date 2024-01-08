@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39</title>
+</head>
+
+<body>
+
+    <p>This is closes() method</p>
+
+    <p id="s" class="p q"></p>
+
+    <div class="demo">
+        grandparent
+        <div class="demo container">
+            parent
+            <div id="myid" class="demo">child hi hlw bla bla</div>
+        </div>
+
+    </div>
+
+    <script>
+
+        let a = document.getElementById("myid");
+        let b = a.closest(".container");
+
+        if(b){
+            b.style.border = "4px solid black"
+        }
+
+
+        ////
+
+        let x = document.getElementById("s")
+        if(x.closest(".q")){
+            x.innerHTML = "Excellent"
+        }
+        else{
+            x.innerHTML = "bad"
+        }
+
+
+        //note. The closest() method starts at the element itself, then the anchestors (parent, grandparent, ...) until a match is found.
+
+    </script>
+
+</body>
+
+</html>

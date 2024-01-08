@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            background: silver;
+        }
+
+        nav li {
+            list-style: none;
+            margin: 15px 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Me</li>
+
+    </nav>
+
+
+    <table>
+        <td>hello</td>
+        <tr>hi</tr>
+        <tr>hlw</tr>
+        <tr>how</tr>
+    </table>
+
+
+
+
+    <script>
+
+        //Questions.
+        //01_Create a navbar and change the color of it's first element to red.
+        //02_Create a table without tbody now use "view page sourse" button to check whether it has a tbody or not
+        //03_Create an element with 3 children now change the color of first and last element to green.
+        //04_write a javascript code to change background of all <li> tages to cyan.
+        //05_which of the following is used to look for the farthest ancest that matches a given css selector
+        //a. matches     b.closest      c.contains     d.non of these
+
+
+
+        //answers.
+
+        //01_answer
+
+        let a = document.getElementsByTagName("nav")[0].firstElementChild;
+        
+        a.style.color = "red"
+
+
+        //02_answer.
+
+        //answer is no
+
+
+        // 03_answer
+
+        let b = document.getElementsByTagName("nav")[0].firstElementChild.nextElementSibling;
+        let c = document.getElementsByTagName("nav")[0].lastElementChild;
+
+        b.style.color = "green"
+        c.style.color = "green"
+
+
+        //04_answer.
+
+        // Array.from(document.getElementsByTagName("li")).forEach((element) => {
+        //     element.style.background = "cyan";
+        // })
+
+
+        //05_answer
+
+        //answer is d
+
+
+    </script>
+
+</body>
+
+</html>

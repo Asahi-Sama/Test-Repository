@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        /*Weite a Javascript progrm to generate a random number and store it in a variable.the program them takes an input from the user to tell them whether the guess was correct, greater or lesser than the original number.
+        100 - (no of guesses) is the score of the user the program is expected to terminate once between 1 - 100.*/
+
+
+        //Answer.
+
+        let a = Math.floor(Math.random() * (100 - 1)) + 1;
+        console.log(a)
+
+        let b
+        let score = 100
+
+        while (b != a) {
+            score = score - 1
+
+            b = prompt("Enter a Number")
+            b = Number.parseInt(b)
+
+            if (b == a) {
+                console.log(`Congrats you solve it in just ${100 - score} gusses and your score is ${score}/100`);
+                document.write(`Congrats you solve it in just ${100 - score} gusses and your score is ${score}/100`)
+            }
+            else if (b > a && b < 100) {
+                alert("Your guess is bigger than the actual Number");
+            }
+            else if (b < a && b > 0) {
+                alert("Your guess is smoller than the actual Number");
+            }
+            else {
+                alert("Enter Number beatwin 1 to 100")
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

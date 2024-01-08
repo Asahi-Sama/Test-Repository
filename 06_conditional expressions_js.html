@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Conditional statements:-
+
+        //01_if statement.
+        //02_if.....else statement.
+        //03_if.....else if.....else statement.
+
+
+
+        //01_if statement.
+
+        /*let a = prompt("hey whats your age?");
+
+        if (a < 0) {
+            alert("this is an valid age");
+        }*/
+
+
+        ///
+
+
+
+        //02_if.....else statement.
+
+        /*let b = prompt("hey whats your age?");
+
+        if (b < 0) {
+            alert("this is a valid age");
+        }
+
+        else{
+            alert("this is an invalid age");
+        }*/
+
+
+        ///
+
+
+
+        //03_if.....else if.....else statement.
+
+        let a = prompt("hey whats your age?");
+        a = Number.parseInt(a);                //In this method you can change string to a number.
+
+        if (a < 0) {
+            alert("this is an invalid age");
+        }
+
+        else if (a < 9 && a >= 0) {
+            alert("you are a kid and you cannot even think of driving");
+        }
+
+        else if (a < 20 && a > 9) {
+            alert("you are a kid and you can think of driving after 20");
+        }
+
+        else {
+            alert("you can now drive as you are above 20");
+        }
+
+
+        ////
+ 
+
+
+        //Ternary Operator.
+
+        console.log("you can", a < 20 ? "not drive" : "drive");    // console.log("",logic?"":"");
+
+
+        ////
+
+
+
+        console.log(typeof a);                 //This is always a string.
+        a = Number.parseInt(a);                //You can change it to a number.
+        console.log(typeof a);
+
+
+    </script>
+
+
+</body>
+
+</html>

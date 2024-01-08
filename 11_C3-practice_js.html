@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //01_Write a program to print the marks of a student in an object using for loop.(object ={sabbir:95,ahmed:69,shawon:80,karim:92}).
+        //02_Write the program in Question 01 using for in loop.
+        //03_write a program to print "try again" until the user enter the correct number.
+        //04_Write a function to find mean of 5 numbers.
+
+        //01_answer.
+
+        //for loops
+
+        let marks = {
+            sabbir: 95,
+            ahmed: 69,
+            shawon: 80,
+            karim: 92
+        }
+
+        for (let n = 0;
+            n < Object.keys(marks).length;
+            n++) {
+            console.log("The marks of " + Object.keys(marks)[n] + " are " + marks[Object.keys(marks)[n]]);
+
+            // console.log(i);
+            // console.log(typeof Object.keys(marks).length);
+            // console.log(Object.keys(marks).length);
+            // console.log(Object.keys(marks)[i]);
+            // console.log(Object.keys(marks)[3]);
+            // console.log(marks[Object.keys(marks)[i]])
+            // console.log(marks[Object.keys(marks)[2]])
+        }
+
+
+        ///
+
+
+        //02_answer.
+
+        //for in loops
+
+        /*for (let n in marks) {
+            // console.log(n);
+            console.log("The marks of " + n + " are " + marks[n]);
+        }*/
+
+
+        ///
+
+
+        //03_answer.
+
+        let correctNumber = 42
+        let i = prompt("enter a number")
+
+        while (i != correctNumber) {
+
+            // if (i === 42){
+            //     break
+            // }
+            
+            alert("Try again")
+            
+            i = prompt("enter a number");
+
+        }
+        alert("right")                        //Extra
+        console.log("right")
+
+
+        ///
+
+
+        //04_answer.
+
+        const mean = (a, b, c, d) => {
+            return (a + b + c + d) / 4        //function
+        }
+
+        console.log(mean(4,5,6,7));
+
+        
+    </script>
+
+
+</body>
+
+</html>

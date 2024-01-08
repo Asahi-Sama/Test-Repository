@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swg</title>
+</head>
+
+<body>
+
+    <script>
+
+        let sabbir = prompt ("enter a s w g")
+        // sabbir = Number.parseInt(sabbir)
+
+        let computer = Math.floor(Math.random() * (4 - 1)) + 1
+        let match1 = ["s", "w", "g"][computer]
+        
+        // let s = 1
+        // let w = 2
+        // let g = 3
+        
+        if (sabbir == s && computer == w){
+            document.write("sabbir win")
+        }
+        else if (sabbir == w && computer == s){
+            document.write("computer win")
+        }
+        else if (sabbir == w && computer == g){
+            document.write("sabbir win")
+        }
+        else if (sabbir == g && computer == w){
+            document.write("computer win")
+        }
+        else if ( sabbir == g && computer == s){
+            document.write("sabbir win")
+        }
+        else if (sabbir == s && computer == g){
+            document.write("computer win")
+        }
+        else if(sabbir == computer){
+            document.write("tie")
+        }
+        else {
+            document.write("Enter a valid number")
+        }
+        
+        match(match1, sabbir)
+        
+        </script>
+
+</body>
+
+</html>

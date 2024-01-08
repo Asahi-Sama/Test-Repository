@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        let name = "Shawon"
+        console.log(name);
+        console.log(name.length);            //Identify the length of string.Index starts at 0.
+
+        console.log(name.toUpperCase());     //transform string to Upper Case.
+        console.log(name.toLowerCase());     //transform string to Lower Case.
+
+        console.log(name.slice(1, 4));       //4th not included.if (0, 9) = it will print 0 to 8.
+        console.log(name.slice(3));          //It will print 3rd to last.
+
+        console.log(name.replace("wo", "hi"));    //wo replaced by hi."wo" should be stay in string
+
+        let friend = "Utsho"
+        console.log(name.concat(" is a friend of ", friend, " ok bye") + " hi");
+
+        let school = `${name} is a classmate of ${friend} ok bye`  //template literal
+        console.log(school);
+
+        let niceName = "         ashraf        "
+        console.log(niceName);
+        console.log(niceName.trim());         //it will cut the spaces.
+
+        let friends = "karim " + "rohim " + "utsho"
+        console.log(friends);
+        
+
+        //
+        
+
+        //Experiment.
+
+        let fr = "karim"
+        console.log(fr.length)
+        // console.log(Object.keys(fr).length)
+
+        for (i = 0; i < Object.keys(fr).length; i++) {        //Object.keys().length    Array 
+            // console.log(i)
+            // console.log(fr[0] + fr[1] + fr[2] + fr[3] + fr[4]);
+            console.log(fr[Object.keys(fr)[i]]);
+        }
+
+        // console.log(fr[0] + fr[1] + fr[2] + fr[3] + fr[4]);
+
+
+        let a = "Sabbir"
+        let b = " Shawon"
+        let c = a.concat(b)
+        console.log(c)
+
+
+    </script>
+
+
+</body>
+
+</html>

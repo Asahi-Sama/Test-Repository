@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>41</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Exercise 3 - Tell me a joke
+
+        // Question : elem.innerHTML is used to populate a div with HTML. search online about this method and create a website with a div tag containing a random joke given an array of jokes. Use math.random and fetch jokes from the internet (using any website to create the array) your website should show a random joke on every reload. Minimum length of your jokes array should be 10.
+
+        //Answer :
+
+
+        let a = [
+         "How do you talk to a giant? Use big words.",
+         "What falls in winter but never gets hurt? Snow.",
+         "Why did the melon jump into the lake? It wanted to be a water-melon.",
+         "Dad, can you put my shoes on? No, I don't think they'll fit me.",
+         "A nurse told me, “Sorry for the wait!” I replied, \“It's alright, I'm patient.\”",
+         "Why are pirates called pirates? Because they arrrr!",
+         "Can February March? No, but April May!",
+         "What do you call a cold dog? A chili dog!",
+         "What gets more wet the more it dries? A towel!",
+         "Why should you never trust stairs? They're always up to something."
+        ]
+
+        let b = Math.floor(Math.random() * (a.length - 1)) + 1
+        console.log(b)
+
+        let s = a[b]
+        console.log(a[b])
+        document.write(s)
+
+
+    </script>
+</body>
+
+</html>
